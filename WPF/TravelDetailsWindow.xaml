@@ -1,0 +1,135 @@
+﻿<Window x:Class="TravelPal.WPF.TravelDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TravelPal.WPF"
+        mc:Ignorable="d"
+        Title="TravelDetailsWindow" Height="450" Width="500">
+    <!-- A window that shows detailed information about the travel -->
+    <Grid Margin="20" Background="MediumSlateBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label
+            x:Name="lblTravelDetailsHeader"
+            Content="Travel details"
+            Grid.Column="2"
+            Grid.ColumnSpan="4"
+            HorizontalAlignment="Left"
+            Foreground="White"
+            FontSize="30"
+            />
+        <Label
+            x:Name="lblTravelDetailsDestination"
+            Grid.Row="2"
+            Content="Destination"
+            Foreground="White"
+            VerticalAlignment="Center"
+            FontSize="14"
+            Grid.ColumnSpan="2"
+            />
+        <Label
+            x:Name="lblTravelDetailsCountry"
+            Grid.Row="3"
+            Content="Country"
+            Foreground="White"
+            VerticalAlignment="Center"
+            FontSize="14"
+            />
+        <Label
+            x:Name="lblTravelDetailsTravelers"
+            Grid.Row="4"
+            Content="Travelers"
+            Foreground="White"
+            VerticalAlignment="Center"
+            FontSize="14"
+            />
+        <Label
+            x:Name="lblTravelDetailsTrip"
+            Grid.Row="5"
+            Content="Trip"
+            Foreground="White"
+            VerticalAlignment="Center"
+            FontSize="14"
+            />
+        <Label
+            x:Name="lblTravelDetailsTrpType"
+            Grid.Row="6"
+            Grid.ColumnSpan="2"
+            Content="Travel type"
+            Foreground="White"
+            VerticalAlignment="Center"
+            FontSize="14"
+            />
+        <CheckBox
+            x:Name="cbTravelDetailsAllInclusive"
+            Grid.Row="5"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
+            Content="All Inclusive "
+            Foreground="White"
+            Margin="13"
+            />
+        <TextBox 
+            x:Name="tbTravelDetailsDestination"
+            Grid.Row="2"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Margin="15"
+            />
+        <TextBox 
+            x:Name="tbTravelDetailsCountry"
+            Grid.Row="3"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Margin="15"
+            />
+        <TextBox 
+            x:Name="tbTravelDetailsTravelers"
+            Grid.Row="4"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Margin="15"
+            />
+        <TextBox 
+            x:Name="tbTravelDetailsTrip"
+            Grid.Row="5"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Margin="15"
+            />
+        <TextBox 
+            x:Name="tbTravelDetailsTripType"
+            Grid.Row="6"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Margin="15"
+            />
+        <Button
+            x:Name="btnTravelDetailsExit"
+            Grid.Column="6"
+            Grid.Row="7"
+            Margin="8"
+            Content="Exit"
+            Background="MintCream" Click="btnTravelDetailsExit_Click"
+            />
+    </Grid>
+</Window>

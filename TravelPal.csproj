@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="WPF\model-plane-airplane-yellow-background-flat-lay-design-travel-vacation-concept_152898-2291.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="WPF\model-plane-airplane-yellow-background-flat-lay-design-travel-vacation-concept_152898-2291.jpg" />
+  </ItemGroup>
+
+</Project>
